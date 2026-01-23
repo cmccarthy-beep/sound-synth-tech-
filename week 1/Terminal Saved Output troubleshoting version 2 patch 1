@@ -1,0 +1,51 @@
+Last login: Wed Jan 21 13:35:42 on ttys002
+carolinemccarthy@bobcat-126-77 ~ % cd /Users/carolinemccarthy/Desktop/CSS 
+carolinemccarthy@bobcat-126-77 CSS % cd sound-synth-tech- 
+carolinemccarthy@bobcat-126-77 sound-synth-tech- % git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+carolinemccarthy@bobcat-126-77 sound-synth-tech- % git push
+Enumerating objects: 14, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 2.88 KiB | 2.88 MiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/cmccarthy-beep/sound-synth-tech-.git
+   9280175..981c3e5  main -> main
+carolinemccarthy@bobcat-126-77 sound-synth-tech- % git add .
+carolinemccarthy@bobcat-126-77 sound-synth-tech- % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .DS_Store
+
+carolinemccarthy@bobcat-126-77 sound-synth-tech- % git commit -m "version 2 patch 2"
+[main 99fe24e] version 2 patch 2
+ Committer: Caroline McCarthy <carolinemccarthy@bobcat-126-77.bates.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+carolinemccarthy@bobcat-126-77 sound-synth-tech- % git config --global user.name "Caroline McCarthy" git config --global user.email cmccarthy@bates.edu
+error: no action specified
+carolinemccarthy@bobcat-126-77 sound-synth-tech- % 

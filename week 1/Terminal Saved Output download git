@@ -1,0 +1,270 @@
+Last login: Wed Jan 21 12:03:25 on ttys000
+carolinemccarthy@bobcat-126-77 ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+==> You are using macOS 12.5.
+==> We (and Apple) do not provide support for this old version.
+This installation may not succeed.
+After installation, you will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving any
+issues you experience while you are running this old version.
+
+==> This script will install:
+/opt/homebrew/bin/brew
+/opt/homebrew/share/doc/homebrew
+/opt/homebrew/share/man/man1/brew.1
+/opt/homebrew/share/zsh/site-functions/_brew
+/opt/homebrew/etc/bash_completion.d/brew
+/opt/homebrew
+/etc/paths.d/homebrew
+==> The following new directories will be created:
+/opt/homebrew/bin
+/opt/homebrew/etc
+/opt/homebrew/include
+/opt/homebrew/lib
+/opt/homebrew/sbin
+/opt/homebrew/share
+/opt/homebrew/var
+/opt/homebrew/opt
+/opt/homebrew/share/zsh
+/opt/homebrew/share/zsh/site-functions
+/opt/homebrew/var/homebrew
+/opt/homebrew/var/homebrew/linked
+/opt/homebrew/Cellar
+/opt/homebrew/Caskroom
+/opt/homebrew/Frameworks
+==> The Xcode Command Line Tools will be installed.
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /usr/bin/install -d -o root -g wheel -m 0755 /opt/homebrew
+==> /usr/bin/sudo /bin/mkdir -p /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod ug=rwx /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod go-w /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown carolinemccarthy /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/sbin/chown -R carolinemccarthy:admin /opt/homebrew
+==> Searching online for the Command Line Tools
+==> /usr/bin/sudo /usr/bin/touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+==> Installing Command Line Tools for Xcode-14.2
+==> /usr/bin/sudo /usr/sbin/softwareupdate -i Command\ Line\ Tools\ for\ Xcode-14.2
+Software Update Tool
+
+Finding available software
+
+Downloading Command Line Tools for Xcode
+Downloaded Command Line Tools for Xcode
+Installing Command Line Tools for Xcode
+Done with Command Line Tools for Xcode
+Done.
+==> /usr/bin/sudo /usr/bin/xcode-select --switch /Library/Developer/CommandLineTools
+==> /usr/bin/sudo /bin/rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 319866, done.
+remote: Counting objects: 100% (269/269), done.
+remote: Compressing objects: 100% (146/146), done.
+remote: Total 319866 (delta 183), reused 167 (delta 123), pack-reused 319597 (from 3)
+remote: Enumerating objects: 55, done.
+remote: Counting objects: 100% (34/34), done.
+remote: Total 55 (delta 34), reused 34 (delta 34), pack-reused 21 (from 1)
+==> /usr/bin/sudo /bin/mkdir -p /etc/paths.d
+==> /usr/bin/sudo tee /etc/paths.d/homebrew
+/opt/homebrew/bin
+==> /usr/bin/sudo /usr/sbin/chown root:wheel /etc/paths.d/homebrew
+==> /usr/bin/sudo /bin/chmod a+r /etc/paths.d/homebrew
+==> Updating Homebrew...
+==> Downloading https://ghcr.io/v2/homebrew/core/portable-ruby/blobs/sha256:1c98fa49eacc935640a6f8e10a2bf33f14cfc276804b71ddb658ea45ba99d167
+########################################################################################################################### 100.0%
+==> Pouring portable-ruby-3.4.8.arm64_big_sur.bottle.tar.gz
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run these commands in your terminal to add Homebrew to your PATH:
+    echo >> /Users/carolinemccarthy/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/carolinemccarthy/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+carolinemccarthy@bobcat-126-77 ~ % brew install git
+zsh: command not found: brew
+carolinemccarthy@bobcat-126-77 ~ % $ brew install git
+zsh: command not found: $
+carolinemccarthy@bobcat-126-77 ~ % $ brew install git
+zsh: command not found: $
+carolinemccarthy@bobcat-126-77 ~ % brew install git
+zsh: command not found: brew
+carolinemccarthy@bobcat-126-77 ~ % install 
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+carolinemccarthy@bobcat-126-77 ~ % echo >> /Users/carolinemccarthy/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/carolinemccarthy/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+carolinemccarthy@bobcat-126-77 ~ % 
+carolinemccarthy@bobcat-126-77 ~ % brew help
+Example usage:
+  brew search TEXT|/REGEX/
+  brew info [FORMULA|CASK...]
+  brew install FORMULA|CASK...
+  brew update
+  brew upgrade [FORMULA|CASK...]
+  brew uninstall FORMULA|CASK...
+  brew list [FORMULA|CASK...]
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install --verbose --debug FORMULA|CASK
+
+Contributing:
+  brew create URL [--no-fetch]
+  brew edit [FORMULA|CASK...]
+
+Further help:
+  brew commands
+  brew help [COMMAND]
+  man brew
+  https://docs.brew.sh
+carolinemccarthy@bobcat-126-77 ~ % brew install git
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> Fetching downloads for: git
+✔︎ API Source git.rb                                                                                    Verified      8.2KB/  8.2KB
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/d8bf49c9e59e7044002df5693c292a58b4426cc7/Formula/lib/libu
+Already downloaded: /Users/carolinemccarthy/Library/Caches/Homebrew/downloads/28d415ee3e718544cf47744a7b4c8140355f5b4f1b89d52e0085a0c6f0e9209f--libunistring.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/d8bf49c9e59e7044002df5693c292a58b4426cc7/Formula/g/gettex
+Already downloaded: /Users/carolinemccarthy/Library/Caches/Homebrew/downloads/916ade9991cf538a3b86a8abc635369a1de5b2b7a340317386e4d379dfb89912--gettext.rb
+
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/d8bf49c9e59e7044002df5693c292a58b4426cc7/Formula/p/pcre2.
+Already downloaded: /Users/carolinemccarthy/Library/Caches/Homebrew/downloads/e335d90d3753daeccad99cc43632031d10a1a41599a31e01f504d109f7a62202--pcre2.rb
+Error: A `brew install git` process has already locked /Users/carolinemccarthy/Library/Caches/Homebrew/downloads/0d97610c574390d47ab1c03e56630de5878bdb857b44fa6f1bb534b0e2610876--m4.rb.incomplete.
+Please wait for it to finish or terminate it to continue.
+carolinemccarthy@bobcat-126-77 ~ % 
+carolinemccarthy@bobcat-126-77 ~ % h
+zsh: command not found: h
+carolinemccarthy@bobcat-126-77 ~ % brew install git
+✔︎ JSON API cask.jws.json                                                                               Downloaded   15.3MB/ 15.3MB
+✔︎ JSON API formula.jws.json                                                                            Downloaded   32.0MB/ 32.0MB
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> Fetching downloads for: git
+✔︎ API Source git.rb                                                                                    Verified      8.2KB/  8.2KB
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/d8bf49c9e59e7044002df5693c292a58b4426cc7/Formula/a/automa
+Already downloaded: /Users/carolinemccarthy/Library/Caches/Homebrew/downloads/41e3f3be5393005fc4fa13d35ccacd42b2c72c48af17d566f67fe64fa79a8644--automake.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/d8bf49c9e59e7044002df5693c292a58b4426cc7/Formula/lib/libi
+Already downloaded: /Users/carolinemccarthy/Library/Caches/Homebrew/downloads/0eb05306d3e47f3b034009666c8978264b2ca0e07f7f82241a791fdc5f415ce9--libiconv.rb
+✔︎ API Source libunistring.rb                                                                           Verified      2.4KB/  2.4KB
+✔︎ Formula libunistring (1.4.1)                                                                         Verified      5.0MB/  5.0MB
+✔︎ API Source gettext.rb                                                                                Verified      2.8KB/  2.8KB
+✔︎ API Source pcre2.rb                                                                                  Verified      2.0KB/  2.0KB
+✔︎ Formula pcre2 (10.47)                                                                                Verified      2.1MB/  2.1MB
+✔︎ API Source m4.rb                                                                                     Verified      1.9KB/  1.9KB
+✔︎ Formula m4 (1.4.20)                                                                                  Verified      2.0MB/  2.0MB
+✔︎ Bottle Manifest autoconf (2.72)                                                                      Downloaded   19.7KB/ 19.7KB
+✔︎ Bottle autoconf (2.72)                                                                               Downloaded    1.1MB/  1.1MB
+✔︎ API Source automake.rb                                                                               Verified      2.5KB/  2.5KB
+✔︎ Formula automake (1.18.1)                                                                            Verified      1.7MB/  1.7MB
+✔︎ API Source libiconv.rb                                                                               Verified      2.7KB/  2.7KB
+✔︎ Patch patch-utf8mac.diff                                                                             Verified     78.7KB/ 78.7KB
+✔︎ Formula libiconv (1.18)                                                                              Verified      5.8MB/  5.8MB
+✔︎ Resource git--Authen::SASL                                                                           Verified     40.3KB/ 40.3KB
+✔︎ Resource git--html                                                                                   Verified      1.7MB/  1.7MB
+✔︎ Resource git--man                                                                                    Verified    607.9KB/607.9KB
+✔︎ Resource git--Net::SMTP::SSL                                                                         Verified      2.5KB/  2.5KB
+✔︎ Formula git (2.52.0)                                                                                 Verified      8.0MB/  8.0MB
+✔︎ Formula gettext (0.26)                                                                               Verified     31.4MB/ 31.4MB
+==> Installing dependencies for git: libunistring, gettext, pcre2, m4, autoconf, automake and libiconv
+==> Installing git dependency: libunistring
+==> ./configure --disable-silent-rules
+==> make
+==> make check
+==> make install
+🍺  /opt/homebrew/Cellar/libunistring/1.4.1: 59 files, 5.8MB, built in 5 minutes 55 seconds
+==> Installing git dependency: gettext
+==> ./configure --with-libunistring-prefix=/opt/homebrew/opt/libunistring --disable-silent-rules --with-included-glib --with-inclu
+==> make
+==> make install
+🍺  /opt/homebrew/Cellar/gettext/0.26_1: 2,428 files, 29.2MB, built in 5 minutes 5 seconds
+==> Installing git dependency: pcre2
+==> ./configure --enable-pcre2-16 --enable-pcre2-32 --enable-pcre2grep-libz --enable-pcre2grep-libbz2 --enable-jit --enable-pcre2t
+==> make
+==> make install
+🍺  /opt/homebrew/Cellar/pcre2/10.47: 244 files, 7.2MB, built in 15 seconds
+==> Installing git dependency: m4
+==> ./configure
+==> make
+==> make install
+🍺  /opt/homebrew/Cellar/m4/1.4.20: 41 files, 1.3MB, built in 1 minute 16 seconds
+==> Installing git dependency: autoconf
+==> Pouring autoconf--2.72.arm64_monterey.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/autoconf/2.72: 72 files, 3.8MB
+==> Installing git dependency: automake
+==> ./configure
+==> make install
+🍺  /opt/homebrew/Cellar/automake/1.18.1: 134 files, 3.6MB, built in 5 seconds
+==> Installing git dependency: libiconv
+==> Patching
+==> Applying patch-utf8mac.diff
+==> ./configure --enable-extra-encodings --enable-static --docdir=/opt/homebrew/Cellar/libiconv/1.18/share/doc/libiconv
+==> make -f Makefile.devel CFLAGS= CC=clang ACLOCAL=aclocal AUTOMAKE=automake
+==> make install
+🍺  /opt/homebrew/Cellar/libiconv/1.18: 72 files, 3.2MB, built in 31 seconds
+==> Installing git
+==> make install prefix=/opt/homebrew/Cellar/git/2.52.0_1 sysconfdir=/opt/homebrew/etc CC=clang CFLAGS= LDFLAGS= NO_TCLTK=1 NO_OPE
+==> make CC=clang CFLAGS= LDFLAGS=
+==> make clean
+==> make
+==> make test
+==> make CC=clang CFLAGS= LDFLAGS=
+==> Caveats
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+==> Summary
+🍺  /opt/homebrew/Cellar/git/2.52.0_1: 1,732 files, 60MB, built in 20 seconds
+==> Running `brew cleanup git`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+Removing: /Users/carolinemccarthy/Library/Caches/Homebrew/git--2.52.0.tar.xz... (8.0MB)
+Removing: /Users/carolinemccarthy/Library/Caches/Homebrew/git--Authen::SASL--2.1900.tar.gz... (40.3KB)
+Removing: /Users/carolinemccarthy/Library/Caches/Homebrew/git--Net::SMTP::SSL--1.04.tar.gz... (2.5KB)
+Removing: /Users/carolinemccarthy/Library/Caches/Homebrew/git--html--2.52.0.tar.xz... (1.7MB)
+Removing: /Users/carolinemccarthy/Library/Caches/Homebrew/git--man--2.52.0.tar.xz... (607.9KB)
+==> Caveats
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+carolinemccarthy@bobcat-126-77 ~ %  
