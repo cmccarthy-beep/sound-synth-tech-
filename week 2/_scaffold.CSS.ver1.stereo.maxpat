@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 40.0, 87.0, 699.0, 585.0 ],
+		"rect" : [ 766.0, 87.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 481.5, 356.0, 77.0, 22.0 ],
+					"text" : "sound.out.v1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-42",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -56,7 +67,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 263.0, 370.0, 150.0, 100.0 ],
+					"patching_rect" : [ 263.0, 370.0, 153.0, 100.0 ],
 					"text" : "this is an example of an ABSTRACTION. it is saved on disc and is loaded without a patch called \"p,\" that is loade by itself you can make infinite copies of this patch"
 				}
 
@@ -104,7 +115,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 39.0, 343.0, 78.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "monitor sound output"
 				}
 
@@ -362,7 +372,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-23",

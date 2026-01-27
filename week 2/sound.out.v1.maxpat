@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 766.0, 87.0, 640.0, 480.0 ],
+		"rect" : [ 40.0, 87.0, 699.0, 585.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 481.5, 356.0, 77.0, 22.0 ],
+					"patching_rect" : [ 566.0, 384.0, 77.0, 22.0 ],
 					"text" : "sound.out.v1"
 				}
 
@@ -372,6 +372,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-23",
@@ -588,14 +589,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "_scaffold.CSS.ver1.stereo.maxpat",
-				"bootpath" : "~/Desktop/CSS/sound-synth-tech-/week 2",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
