@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 271.0, 181.5, 163.0, 87.0 ],
+					"text" : "to add point, click\nto delete, shift click on point\n<m> <clear> blank slate\n\nto add points algorythmically \n<m> x y"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"addpoints" : [ 0.0, 0.026666666666667, 0, 79.787234042553195, 0.986666666666667, 0, 180.851063829787222, 0.786666666666667, 0, 734.042553191489333, 0.786666666666667, 0, 1000.0, 0.0, 0 ],
 					"id" : "obj-40",
 					"maxclass" : "function",
@@ -187,7 +199,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 275.75, 155.0, 76.0, 20.0 ],
+					"patching_rect" : [ 271.0, 160.0, 76.0, 20.0 ],
 					"text" : "<function>"
 				}
 
@@ -285,7 +297,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 583.0, 26.0, 150.0, 208.0 ],
+					"patching_rect" : [ 583.0, 26.0, 153.0, 208.0 ],
 					"text" : "ADSR: \nAttack (time it takes for sound to go from silent to loudest level) \nDecay (controls time it takes for sound to go from initial peak of your attack to the sustained level) Sustain (level maintained during main sequence) Release (how long it takes sound to return to silence)\n\nADSR represents event of a single note"
 				}
 
