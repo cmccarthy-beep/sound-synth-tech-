@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 622.0, 88.0, 786.0, 725.0 ],
+		"rect" : [ 620.0, 107.0, 786.0, 725.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -162,7 +162,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 858.0, 681.5, 150.0, 87.0 ],
+					"patching_rect" : [ 858.0, 681.5, 151.0, 87.0 ],
 					"text" : "duty cycle (0.-1. slants the waveform left or right). alters the timbre bc the harmonics change with different slopes and sharp turnsn "
 				}
 
@@ -210,7 +210,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1128.0, 204.0, 203.0, 127.0 ],
+					"patching_rect" : [ 1128.0, 204.0, 205.0, 127.0 ],
 					"text" : "pink noise\nequal power across all octaves\nhigher frequencies decline at a rate of -3dB per octave\n\nreference signal for mixing in audio productor (closer to the human ear's response as a result of measuring in octaves)"
 				}
 
@@ -259,7 +259,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 198.5, 222.0, 193.5, 60.0 ],
-					"presentation_linecount" : 5,
 					"text" : "triangle wave\nodd harmonixs\nsounds like clarinet\nhigh harmonics roll off steeply"
 				}
 
@@ -275,7 +274,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 52.0, 735.5, 98.0, 50.0 ],
+					"patching_rect" : [ 52.0, 737.0, 98.0, 50.0 ],
 					"rows" : 3
 				}
 
@@ -283,12 +282,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-103",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 63.5, 801.0, 50.0, 22.0 ],
-					"text" : "1 0 0"
+					"patching_rect" : [ 63.5, 801.0, 50.0, 35.0 ],
+					"text" : "4 2 0.008"
 				}
 
 			}
@@ -345,7 +345,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4.5, 741.0, 48.0, 33.0 ],
+					"patching_rect" : [ 4.5, 741.0, 51.0, 33.0 ],
 					"text" : "outputs (t-b)"
 				}
 
@@ -941,7 +941,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 231.0, -13.0, 161.0, 47.0 ],
+					"patching_rect" : [ 231.0, -13.0, 165.0, 47.0 ],
 					"text" : "<scope~> to view the time domain representation of the signal"
 				}
 
@@ -1000,7 +1000,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-103", 0 ],
+					"destination" : [ "obj-103", 1 ],
 					"order" : 0,
 					"source" : [ "obj-105", 0 ]
 				}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 278.0, 87.0, 640.0, 480.0 ],
+		"rect" : [ 766.0, 332.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,23 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-20",
-					"linecount" : 2,
+					"id" : "obj-3",
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 260.0, 188.0, 150.0, 33.0 ],
+					"patching_rect" : [ 432.0, 26.0, 150.0, 141.0 ],
+					"text" : "taking one signal (recieve) and splitting it evenly across two speakers which we do by scaling (loadmess), convert to linear (dbtoa) then we get the same amount of sound pressure from 1 (recieve to 2 (send out 1 +2)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 238.0, 189.0, 252.0, 20.0 ],
 					"text" : "<= converts decibels (dB) to linear amplitude"
 				}
 
