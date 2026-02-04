@@ -40,6 +40,28 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 659.0, 467.0, 77.0, 22.0 ],
+					"text" : "sound.out.v1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 486.0, 462.0, 148.0, 22.0 ],
+					"text" : "_scaffold.CSS.ver1.stereo"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-34",
 					"linecount" : 5,
 					"maxclass" : "comment",
@@ -438,7 +460,28 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "_scaffold.CSS.ver1.stereo.maxpat",
+				"bootpath" : "~/Desktop/CSS/sound-synth-tech-/week 2",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sound.in.v1.maxpat",
+				"bootpath" : "~/Desktop/CSS/sound-synth-tech-/week 2",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sound.out.v1.maxpat",
+				"bootpath" : "~/Desktop/CSS/sound-synth-tech-/week 2",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 

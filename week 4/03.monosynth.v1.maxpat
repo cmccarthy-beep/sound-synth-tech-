@@ -40,6 +40,32 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 814.0, 118.5, 91.0, 22.0 ],
+					"text" : "receive velocity"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.0, 0.533333, 0.168627, 1.0 ],
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 659.0, 118.5, 76.0, 22.0 ],
+					"text" : "receive pitch"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-103",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -56,7 +82,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 656.0, 382.0, 150.0, 20.0 ],
+					"patching_rect" : [ 664.0, 492.5, 150.0, 20.0 ],
 					"text" : "must go to function"
 				}
 
@@ -68,7 +94,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 623.0, 376.0, 31.0, 22.0 ],
+					"patching_rect" : [ 631.0, 486.5, 31.0, 22.0 ],
 					"text" : "next"
 				}
 
@@ -80,7 +106,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ -90.0, 181.5, 150.0, 47.0 ],
+					"patching_rect" : [ -95.5, 150.0, 150.0, 47.0 ],
 					"text" : "to separate note on note off you have to add sustain object "
 				}
 
@@ -151,7 +177,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 815.599999487400055, 360.800000250339508, 150.0, 74.0 ],
+					"patching_rect" : [ 823.599999487400055, 471.300000250339508, 150.0, 74.0 ],
 					"text" : "allows us to scale number to a specific range \ninput minimum = 0\ninput maximum = 127\nnew range 0. 1."
 				}
 
@@ -163,7 +189,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 720.599999487400055, 412.800000250339508, 98.0, 22.0 ],
+					"patching_rect" : [ 728.599999487400055, 523.300000250339508, 98.0, 22.0 ],
 					"text" : "zmap 0 127 0. 1."
 				}
 
@@ -187,7 +213,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 699.25, 292.399999558925629, 150.0, 74.0 ],
+					"patching_rect" : [ 707.25, 402.899999558925629, 151.0, 74.0 ],
 					"text" : "i = output integer (non-zero velocity number (how loud I want sound to be))\nb = bang message"
 				}
 
@@ -199,7 +225,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 667.75, 346.399999558925629, 29.5, 22.0 ],
+					"patching_rect" : [ 675.75, 456.899999558925629, 29.5, 22.0 ],
 					"text" : "t b i"
 				}
 
@@ -212,7 +238,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 933.0, 876.0, 150.0, 60.0 ],
-					"presentation_linecount" : 4,
 					"text" : "separates 0s from non zero; 0 always says stop; non-zeros say scale to x level"
 				}
 
@@ -310,7 +335,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 839.0, 776.0, 150.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "MIDI velocity becomes 2nd value "
 				}
 
@@ -323,7 +347,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1081.0, 776.0, 150.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "MIDI pitch becomes 1st value "
 				}
 
@@ -383,7 +406,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 839.0, 596.0, 365.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "<kslider @mode 2> mode 2 means send \"note off\" messages as well as \"note on \"messages"
 				}
 
@@ -395,7 +417,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 623.0, 298.0, 34.0, 22.0 ],
+					"patching_rect" : [ 631.0, 408.5, 34.0, 22.0 ],
 					"text" : "sel 0"
 				}
 
@@ -409,7 +431,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 954.0, 306.0, 50.0, 22.0 ]
+					"patching_rect" : [ 962.0, 416.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -422,7 +444,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 560.0, 150.0, 50.0, 22.0 ]
+					"patching_rect" : [ 554.0, 170.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -433,7 +455,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 907.0, 270.0, 32.0, 22.0 ],
+					"patching_rect" : [ 915.0, 380.5, 32.0, 22.0 ],
 					"text" : "mtof"
 				}
 
@@ -445,7 +467,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 640.0, 199.0, 290.0, 22.0 ],
+					"patching_rect" : [ 648.0, 309.5, 290.0, 22.0 ],
 					"text" : "swap"
 				}
 
@@ -456,8 +478,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 953.0, 145.0, 91.0, 20.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 955.0, 275.5, 91.0, 20.0 ],
 					"text" : "MIDI velocity #"
 				}
 
@@ -468,7 +489,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 640.0, 145.0, 85.0, 20.0 ],
+					"patching_rect" : [ 642.0, 275.5, 85.0, 20.0 ],
 					"text" : "MIDI pitch #"
 				}
 
@@ -482,7 +503,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 623.0, 87.0, 336.0, 53.0 ]
+					"patching_rect" : [ 625.0, 224.0, 336.0, 53.0 ]
 				}
 
 			}
@@ -493,7 +514,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 616.0, 48.0, 365.0, 33.0 ],
+					"patching_rect" : [ 618.0, 185.0, 365.0, 33.0 ],
 					"text" : "<kslider @mode 2> mode 2 means send \"note off\" messages as well as \"note on \"messages"
 				}
 
@@ -780,6 +801,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 1 ],
 					"source" : [ "obj-21", 1 ]
 				}
@@ -798,6 +826,13 @@
 					"destination" : [ "obj-45", 0 ],
 					"order" : 1,
 					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 1 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 962.0, 87.0, 381.0, 234.0 ],
+		"rect" : [ 945.0, 387.0, 381.0, 234.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,40 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 139.0, 71.0, 117.0, 22.0 ],
+					"text" : "lg.random.notes.v01"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 143.0, 26.0, 79.0, 22.0 ],
+					"text" : "lg.midi.in.v01"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 301.0, 138.0, 150.0, 74.0 ],
+					"text" : "cmnd E - lock/unlock\ncmnd I - opens inspector \nshift cmnd E - second object into subpatch \noption click - help doc"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
@@ -235,6 +269,20 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
+				"name" : "lg.midi.in.v01.maxpat",
+				"bootpath" : "~/Desktop/CSS/sound-synth-tech-/week 2",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lg.random.notes.v01.maxpat",
+				"bootpath" : "~/Desktop/CSS/sound-synth-tech-/week 2",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "sound.in.v1.maxpat",
 				"bootpath" : "~/Desktop/CSS/sound-synth-tech-/week 2",
 				"patcherrelativepath" : ".",
