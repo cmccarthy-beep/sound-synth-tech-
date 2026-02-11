@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 768.0, 420.0, 640.0, 480.0 ],
+		"rect" : [ 643.0, 87.0, 763.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -330,7 +330,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 84.0, 311.5, 22.0, 140.0 ]
+					"patching_rect" : [ 84.0, 306.0, 22.0, 140.0 ]
 				}
 
 			}
@@ -468,7 +468,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sound.in.v1.maxpat",
+				"name" : "lg.midi.in.v01.maxpat",
+				"bootpath" : "~/Desktop/CSS/sound-synth-tech-/week 2",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lg.random.notes.v01.maxpat",
 				"bootpath" : "~/Desktop/CSS/sound-synth-tech-/week 2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
